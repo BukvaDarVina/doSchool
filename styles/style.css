@@ -1,0 +1,452 @@
+@font-face {
+    font-family: monseratt;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+body {
+    font-family: monseratt;
+}
+
+
+.header {
+    width: 100%;
+    background: red;
+    height: 110px;
+}
+
+.p-5 {
+    padding: 15px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo-do-school {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo-do-school img {
+    width: 15%;
+}
+
+.title-map {
+    font-size: 32px;
+}
+
+.container-map {
+    padding: 0 215px;
+}
+
+.about-map-class {
+    flex-basis: 40%;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Стиль для области по умолчанию */
+.region {
+    fill: #55DBCB;
+    stroke: #ffffff;
+    stroke-width: 2;
+    transition: fill 0.3s;
+}
+
+/* Стиль при наведении мыши */
+.region:hover {
+    fill: #2a6dd0;
+    cursor: pointer;
+}
+
+/* Активная область (по щелчку или другим событиям) */
+.active {
+    fill: #ff0000;
+}
+
+.all-map {
+    display: block;
+    /*  position: absolute; */
+    /*      top: 45px;
+    left: 320px;
+    right: 45px; */
+    z-index: 100;
+}
+
+.all-map object {
+    width: 100%;
+}
+
+.wrapper-map-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.names-cityes li {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.names-cityes img {
+    padding-right: 20px;
+}
+
+.amur-citys-rayones {
+    display: flex;
+    font-size: 19px;
+    padding-top: 25%;
+    padding-left: 3%;
+
+}
+
+.amur-citys-rayones a {
+    text-decoration: none;
+    color: #000;
+}
+
+.amur-citys-rayones a:hover {
+    color: #2a6dd0;
+}
+
+
+
+#g-zeya:hover~[id^="region-id-"] {
+    font-size: 25px;
+}
+
+/* POP-UP */
+.popup {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    width: 275px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.wrapper-pop-up {
+    position: relative;
+}
+
+.popup h3 {
+    margin-top: 0;
+}
+
+.popup .close-btnn {
+    background-color: #55DBCB;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup .close-btnn:hover {
+    background-color: #55DBCB;
+}
+
+.close-btnn {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    margin: 0 auto;
+}
+
+.btn-pop-up-inner {
+    display: flex;
+    justify-content: center;
+    background: #55DBCB;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* Меню площадок */
+
+.ul-ploshadok {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-right: 70px;
+}
+
+.ul-ploshadok-2 {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 70px;
+
+
+}
+
+.li-ploshadok {
+    padding: 15px 15px;
+    background: #d9d9d9;
+    border-radius: 15px;
+    width: 260px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.active-ploshadka {
+    background: #55DBCB;
+}
+
+.li-ploshadok a {
+    color: #000;
+
+}
+
+.ploshadka-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 элемента в строке */
+    gap: 20px;
+    /* добавляет промежутки между элементами, можно изменить значение по необходимости */
+}
+
+
+.ploshadka-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 элемента в строке */
+    gap: 20px;
+    /* добавляет промежутки между элементами, можно изменить значение по необходимости */
+}
+
+
+.title-ploshadki {
+    font-size: 48px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+@media (max-width: 1200px) {
+    .ploshadka-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 элемента в строке на экранах до 1200px */
+    }
+}
+
+@media (max-width: 768px) {
+    .ploshadka-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 элемента в строке на экранах до 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .ploshadka-wrapper {
+        grid-template-columns: 1fr;
+        /* 1 элемент в строке на экранах до 480px */
+    }
+}
+
+
+.ploshadka ul {
+    list-style: none;
+    padding: 0;
+}
+
+.title-ploshadki-inner {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title-ploshadki-inner-inner {
+    font-size: 24px;
+
+
+}
+
+.title-ploshadki-inner p {
+    text-align: inherit;
+}
+
+.title-ploshadki-inner-inner p {
+    text-align: inherit;
+
+
+}
+
+.title-ploshadki-inner-inner a {
+    text-decoration: none;
+    color: #000;
+}
+
+.title-ploshadki-inner-inner a:hover {
+    color: #2a6dd0;
+    transition: 0.3s ease;
+}
+
+.btn-ploshadka {
+    padding: 16px 45px;
+    border: 1px dashed black;
+    border-radius: 15px;
+    background: none;
+}
+
+.btn-ploshadka:hover {
+    border: 1px dashed #55DBCB;
+}
+
+
+/* Вторая главная */
+
+.title-big {
+    font-size: 64px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* Список площадок */
+
+/* .logo-do-school-2{
+   position: absolute; 
+   
+} */
+.logo-do-school-2 img {
+    width: 15%;
+    float: right;
+    transform: translate(30px, -99px);
+}
+
+.back-btn {
+    font-size: 22px;
+    color: #000;
+}
+
+.container-map-2 {
+    padding: 0 12.55%;
+    padding-top: 5%;
+}
+
+.ul-spisok-ploshadok {
+    font-size: 22px;
+    color: #000;
+    list-style: none;
+}
+
+.ul-spisok-ploshadok a {
+    color: #000;
+    cursor: pointer;
+}
+
+.li-spisok-ploshadok a {
+    color: #000;
+    cursor: pointer;
+}
+
+.block-contact-inform {
+    display: flex;
+/*     justify-content: center; */
+    text-align: justify;
+}
+
+.block-contact-left {
+    flex-basis: 65%;
+}
+
+.block-contact-right {
+    flex-basis: 35%;
+}
+
+/* .block-contact-left{
+    flex-basis: 40%;
+} */
+/* .block-contact-righ{
+    flex-basis: 30%;
+} */
+
+.ploshadka-about-contacts a{
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Галлерея */
+
+.photo-loshadki {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 элемента в строке */
+    gap: 20px;
+    /* Промежутки между элементами */
+}
+
+.photo-loshadki img {
+    width: 100%;
+    /* Изображение растягивается по ширине контейнера */
+    height: 250px;
+    /* Фиксированная высота */
+    object-fit: cover;
+    /* Обрезка изображения по контейнеру, чтобы избежать искажений */
+    border-radius: 10px;
+    /* Добавление закругления углов, по желанию */
+}
+
+
+/* Стили для полноэкранного отображения */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Стили для крестика */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Стили для кнопок навигации */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}

@@ -1,0 +1,60 @@
+g-tynda  -> region-id-19
+g-skovorodino  -> region-id-17
+g-magdagachi  -> region-id-9
+g-shimanovsk  -> region-id-20
+g-mazan  -> region-id-10
+g-selem  -> region-id-15
+g-svobodny  -> region-id-14
+g-seryshevo  -> region-id-16
+g-romny  -> region-id-13
+g-belogorsk  -> region-id-2
+g-blag  -> region-id-3
+g-ivan  -> region-id-7
+g-october  -> region-id-12
+g-tambovka  -> region-id-18
+g-konstantin  -> region-id-8
+g-mikhail  -> region-id-11
+g-zavitinsk  -> region-id-5
+g-arhara  -> region-id-1
+g-bureya  -> region-id-4
+g-zeya -> region-id-6
+
+Отсортируй по алфавиту 
+
+Благовещенск
+Свободный
+Белогорск
+Райчихинск
+Шимановск
+Зея
+Тында
+пгт. Прогресс
+ЗАТО Циолковский
+Архаринский район
+Белогорский район
+Благовещенский  район
+Бурейский район
+Завитинский район
+Зейский район
+Ивановский район
+Константиновский район
+Магдагачинский район
+Мазановский район
+Михайловский район
+Октябрьский район
+Ромненский район
+Свободненский район
+Селемджинский район
+Серышевский район
+Сковородинский район
+Тамбовский район
+Тындинский район
+Шимановский район
+
+
+
+
+
+
+
+
