@@ -24,17 +24,46 @@
                 <a href="#" class="back-btn">К списку</a>
                 <div class="block-ploshadki-2">
                     <div class="ploshadka-spisok">
-                        <h3 class="title-big p-5 name-ploshadki-inner">
-                            Имя площадки
-                        </h3>
+                        <div class="block-title-ploshadki">
+                            <h3 class="title-big fw-extra">
+                                Имя площадки
+                            </h3>
+                            <p class="number-ploshadki">
+                                (N п.)
+                            </p>
+                        </div>
                         <a href="#" class="back-btn">
                             Список площадок/ Площадка №
                         </a>
                     </div>
                 </div>
+                <div class="menu-about-ploshadok">
+                    <ul class="ul-ploshadok">
+                        <li class="li-ploshadok active-ploshadka">
+                            <a href="#">
+                                Основная информация
+                            </a>
+                        </li>
+                        <li class="li-ploshadok">
+                            <a href="#">
+                                Программа стажирвки
+                            </a>
+                        </li>
+                        <li class="li-ploshadok">
+                            <a href="./index3AboutCityes.html">
+                                Анонс стажировки
+                            </a>
+                        </li>
+                        <li class="li-ploshadok">
+                            <a href="#">
+                                Методические материалы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="block-contact-inform">
                     <div class="block-contact-left">
-                        <p>
+                        <p class="text-inner-ploshadka">
                             <b>Полное наименование ДОО:</b>
                         </p>
                         <p class="name-doop">
@@ -42,13 +71,13 @@
                             exercitationem sapiente commodi dicta nemo quis explicabo totam non cum, aut eaque officia
                             iste accusantium minus? Nesciunt, quisquam?
                         </p>
-                        <p>
+                        <p class="text-inner-ploshadka">
                             <b>Сокращённое наименование:</b>
                         </p>
                         <p class="name-doop-sokr"></p>
                         lorem
                         </p>
-                        <p>
+                        <p class="text-inner-ploshadka">
                             <b>Юридический адрес:</b>
                         </p>
                         <p class="yur-adress"></p>
@@ -56,7 +85,7 @@
                         labore veniam dolorum aliquid molestiae et nihil consectetur nisi dolor cum, atque fuga a
                         eligendi vero blanditiis.
                         </p>
-                        <p>
+                        <p class="text-inner-ploshadka">
                             <b>Фактический адрес:</b>
                         </p>
                         <p class="fact-adress"></p>
@@ -64,35 +93,36 @@
                         labore veniam dolorum aliquid molestiae et nihil consectetur nisi dolor cum, atque fuga a
                         eligendi vero blanditiis.
                         </p>
-                        <div class="ploshadka-about-contacts">
+                        <div class="ploshadka-about-contacts text-inner-ploshadka">
                             <b>Сайт ДОО:</b>
                             <a href="#">
                                 www.google.com
                             </a>
                         </div>
-                        <div class="ploshadka-about-contacts">
+                        <div class="ploshadka-about-contacts text-inner-ploshadka">
                             <b>Telegram:</b>
                             <a href="tel:">
                                 88001111111
                             </a>
                         </div>
-                        <div class="ploshadka-about-contacts">
+                        <div class="ploshadka-about-contacts text-inner-ploshadka">
                             <b>Е-mail: </b>
                             <a href="mailto:">
                                 www.google@gmail.com
                             </a>
                         </div>
-                        <div class="ploshadka-about-contacts">
+                        <div class="ploshadka-about-contacts text-inner-ploshadka">
                             <b>Телефон/факс: </b>
                             <a href="tel:">
                                 88001111111
                             </a>
                         </div>
 
-                        <p><b>Администратор региональной стажировочной площадки </b></p>
+                        <p class="text-inner-ploshadka"><b>Администратор региональной стажировочной площадки </b></p>
                         <p>Фамилия Имя Отчество</p>
 
-                        <b>Кратко о направлении деятельности региональной стажировочной площадки:</b>
+                        <p class="text-inner-ploshadka">Кратко о направлении деятельности региональной стажировочной
+                            площадки:</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eligendi placeat at ut.
                             Nisi asperiores hic ducimus animi, totam expedita blanditiis voluptatem esse sapiente quod
                             culpa qui ullam earum quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -117,17 +147,38 @@
                             autem at beatae esse asperiores maxime modi harum iure vel dolor id quas?</p>
                     </div>
                     <div class="block-contact-right">
+                        <button class="li-ploshadok btn-active-popup">
+                            <!-- Нажимаю и открывается popup  -->
+
+                            Подать заявку
+                        </button>
+                        <!-- Pop-up окно с регистрационной формой -->
+                        <!-- Pop-up окно -->
+                        <div class="popup-form" id="popup-form">
+                            <div class="popup-form-content">
+                                <span class="popup-form-close" id="popup-form-close">&times;</span>
+                                
+                                <p>ССЫЛКУ НА ФОРМУ РЕГИСТРАЦИИ</p>
+                                
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <div class="numbers-couner">
+                                <p class="numbers-couner">3/10</p>
+                            </div>
+                            <img src="./img/humanform.svg" alt="">
+                        </div>
 
                     </div>
                 </div>
                 <!-- <div class="block-contact-inform"> -->
-                    <div class="photo-loshadki block-contact-left" id="gallery">
-                        <img src="https://www.mgpu.ru/wp-content/uploads/2020/07/97.jpg" alt="">
-                        <img src="https://www.mgpu.ru/wp-content/uploads/2020/07/97.jpg" alt="">
-                        <img src="https://www.mgpu.ru/wp-content/uploads/2020/07/97.jpg" alt="">
-                        <img src="https://www.mgpu.ru/wp-content/uploads/2020/07/97.jpg" alt="">
+                <div class="photo-loshadki block-contact-left" id="gallery">
+                    <img src="https://www.mgpu.ru/wp-content/uploads/2020/07/97.jpg" alt="">
+                    <img src="https://www.mgpu.ru/wp-content/uploads/2020/07/97.jpg" alt="">
+                    <img src="https://www.mgpu.ru/wp-content/uploads/2020/07/97.jpg" alt="">
+                    <img src="https://www.mgpu.ru/wp-content/uploads/2020/07/97.jpg" alt="">
 
-                    </div>
+                </div>
                 <!-- </div> -->
 
 
@@ -146,7 +197,7 @@
     <script src="./slider.js">
 
     </script>
-
+   <script src="./pop-up-form.js"></script>
 </body>
 
 </html>
